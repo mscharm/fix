@@ -50,6 +50,8 @@ end
 
 gem 'connection_pool'
 gem 'spree', '3.0.4'
+gem 'bitpay-rails', require: 'bit_pay_rails'
+gem 'spree_bitpay',  github: 'mscharm/spree-bitpay'
 gem 'spree_i18n', github: 'mscharm/spree_i18n'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'

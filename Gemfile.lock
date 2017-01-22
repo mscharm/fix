@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/mscharm/spree-bitpay.git
+  revision: 052e428136e91f6592078aae4e170470e08ece7b
+  specs:
+    spree_bitpay (2.0.0)
+      bitpay-rails (~> 2.0)
+      spree_core (~> 3.0.4)
+
+GIT
   remote: git://github.com/mscharm/spree_i18n.git
   revision: b1b27fe84d4ff073febe6788d4113ef154b7e7c4
   specs:
@@ -87,6 +95,15 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
     bcrypt (3.1.11)
+    bitpay-key-utils (2.0.1)
+      ecdsa (~> 1.2)
+    bitpay-rails (2.3.2)
+      bitpay-sdk (~> 2.4.0)
+      rails (~> 4.2.1)
+    bitpay-sdk (2.4.4)
+      bitpay-key-utils (~> 2.0.0)
+      json (~> 1.8)
+      rack (~> 1.5)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -129,6 +146,7 @@ GEM
       warden (~> 1.2.3)
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
+    ecdsa (1.2.0)
     erubis (2.7.0)
     execjs (2.7.0)
     ffaker (1.32.1)
@@ -362,6 +380,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (~> 1.0)
+  bitpay-rails
   byebug
   coffee-rails (~> 4.1.0)
   connection_pool
@@ -377,6 +396,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree (= 3.0.4)
   spree_auth_devise!
+  spree_bitpay!
   spree_gateway!
   spree_i18n!
   spring
